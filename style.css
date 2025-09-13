@@ -10,17 +10,23 @@ box-sizing: border-box;
 
 nav {
     height: 60px;
-    background-color: aquamarine;
-    box-shadow:1px 2px 4px ;
-    padding: 0  14px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: relative;
+    background-color:#f1f1f1;
+    box-shadow:1px 2px 4px #1212130 ;
+    padding:0 14px ;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    position:relative;
 }
 
 .nav-profile-head {
-    font-size: 24px;
+    display:flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.nav-profile-head h1{
+    font-size: 32px;
     font-weight: 600;
 }
 
@@ -29,7 +35,7 @@ nav {
     width: 40px;
     object-fit: contain;
     border-radius: 50%;
-    border: 2px solid #345f34;
+    border: 2px solid #3f3f3f;
     padding: 2px;
 
 }
@@ -37,7 +43,7 @@ nav {
 .nav-item {
     display: flex;
     list-style: none;
-    align-item: center;
+    align-items:center;
     gap: 12px;
 }
 
@@ -48,6 +54,7 @@ nav {
     font-weight: 500;
     transition: 0.3s;
     border-radius: 6px;
+    font-size: 18px;
 }
 
 .nav-item li a:hover {
@@ -56,5 +63,6 @@ nav {
 }
 
 .menu-toggle  {
-    
+  display: none; 
+  font-size: 24px; 
 }
