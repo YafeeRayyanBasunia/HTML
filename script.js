@@ -1,10 +1,21 @@
-const menuToggle=document.getElementById("menu-toggle");
-const navItem=document.getElementById("nav-item");
+let screen = document.getElementById('screen');
 
-menuToggle.addEventListener("click", () => {
- navItem.classList.toggle("show");
- 
- const icon=menuToggle.querySelector("i");
- icon.classList.toggle(fa-bars);
- icon.classList.toggle(fa-xmark);
-})
+function press(value) {
+    screen.value += value ;   
+}
+
+function clearScreen(value) {
+    screen.value = '';
+}
+
+function back () {
+  screen.value = screen.value.slice(0,-1);
+}
+
+function calculate() {
+    try {
+        screen .value = eval(screen.value);
+    } catch{
+        screen.value = 'Eror'
+    }
+}

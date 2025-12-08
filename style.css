@@ -1,213 +1,74 @@
-* {
-
-font-family: "Poppins", sans-serif;
-margin: 0;
-padding: 0;
-box-sizing: border-box;
-}
-
-nav {
-    height:60px;
-    background-color:#f1f1f1;
-    box-shadow:1px 2px 4px  #12121230;
-    padding:0 14px;
-    display:flex ;
-    align-items:center ;
-    justify-content:space-between ;
-    position:relative;
-}
-
-.nav-profile-head {
-    display:flex;
-    align-items: center;
-    gap: 8px;
-}
-
-.nav-profile-head h1{
-    font-size: 32px;
-    font-weight: 600;
-}
-
-.nav-profile {
-    height: 40px;
-    width: 40px;
-    object-fit: contain;
-    border-radius: 50%;
-    border: 2px solid #3f3f3f;
-    padding: 2px;
-
-}
-
-.nav-item {
+body {
+    margin: 0;
+    height: 100vh;
     display: flex;
-    list-style: none;
-    align-items:center;
-    gap: 12px;
-}
-
-.nav-item li a{
-    text-decoration: none;
-    color: #222;
-    padding: 8px 10px;
-    font-weight: 500;
-    transition: 0.3s;
-    border-radius: 6px;
-    font-size: 18px;
-}
-
-.nav-item li a:hover {
-    background-color: #3f3f3f;
-    color: #fff;
-}
-
-.menu-toggle  {
-  display: none; 
-  font-size: 24px; 
-  cursor: pointer;
-}
-
-.banner-container{
-    display: flex;
-    
-    align-items: center;
     justify-content: center;
-    gap: 56px;
-    margin-top: 36px;
-    margin-bottom: 20px;
+    align-items: center;
+    background: #0f172a;
+    font-family: Arial, sans-serif;
+    color: #e2e8f0;
 }
 
-.banner-img  {
-   height: 500px;
-   width: 500px;
-   object-fit: cover;
-   border-radius:50%;
-   border: 8px solid #232323
-}
 
-.banner-head{
+.calc {
+    width: 260px;
+    height: 360px;
+    background: #1e293b;
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
     display: flex;
     flex-direction: column;
-    align-items: center;
+    justify-content: flex-start;
+    border: 2px solid #334155;
 }
 
-.banner-head p{
-    font-size: 26px;
-    font-weight: 500;
-    color: 383838;
-}
 
-.banner-head h1{
-    font-size: 44px;
-    font-weight: 700;
-    color: #000;
-}
-
-.banner-head h2{
-   font-size: 32px;
-   color: #2f2f2f;
-   font-weight: 600;
-}
-
-.banner-btn{
-    display: flex;
-    align-items:center ;
-    justify-content:center;
-    gap: 16px;
-    margin-top: 12px;
-}
-
-.btn-veiw {
-    background-color: #fff;
-    color: #000;
-    border: 2px solid #000;
-    padding: 10px 12px;
-    font-size: 16px;
-    font-weight:500 ;
+.screen {
+    width: 92%;
+    height: 50px;
+    font-size: 22px;
+    margin-bottom: 12px;
+    padding: 10px;
+    background: #0f172a;
+    border: 1px solid #334155;
     border-radius: 6px;
-} 
-  
-.btn-download{
+    color: #e2e8f0;
+    text-align: right;
+}
+
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+
+button {
+    height: 50px;
+    font-size: 18px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    background: #334155;
+    color: #e2e8f0;
+    transition: 0.2s;
+}
+
+
+button:hover {
+    background: #475569;
+}
+
+
+button.operator {
+    background: #475569;
+}
+
+
+button.equal {
+    grid-column: span 2;
+    background: #3b82f6;
     color: #fff;
-    background-color: #000;
-    border:2px solid  #000;
-    padding: 10px 14px;
-    font-size: 16px;
-    font-weight: 500;
-    border-radius: 6px ;
 }
-
-.btn-veiw:hover {
-    color: #fff;
-    background-color: #000;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-.btn-download:hover {
-    background-color: #fff;
-    color: #000;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-.banner-icon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 12px;
-    margin-top: 14px;
-    font-size: 38px;
-}
-
-.banner-icon a  {
-    text-decoration: none;
-    color: #000;
-}
-
-.banner-icon a:hover {
-    cursor: pointer;
-
-}
-
-@media(max-width:768px) {
-
- .nav-item {
-   
-   flex-direction: column;
-   background-color: #f1f1f1;
-   position: absolute;
-   top: 60px;
-   right:0;
-   width: 220px;
-   display: none;
-   padding: 15px 0;
-   box-shadow: -2px 4px 6px rgba(0, 0, 0, 0.15);
-    
-    }
-
-}
-
-.nav-item.show {
- display: flex;
-}
-
-.menu-toggle {
-   display: block;
-}
-
-.nav-profile-head h1 {
-    font-size: 24px;
-}
-
-
-.nav-item li a {
-    padding: 8px 32px;
-    font-size: 16px;
-}
-
-.banner-container {
-  flex-direction: column;
-  
-}
-
-
