@@ -1,74 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
 body {
-    margin: 0;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #0f172a;
-    font-family: Arial, sans-serif;
-    color: #e2e8f0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f4f4f4;
 }
 
-
-.calc {
-    width: 260px;
-    height: 360px;
-    background: #1e293b;
-    padding: 20px;
-    border-radius: 4px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    border: 2px solid #334155;
+.container {
+  text-align: center;
+  background: white;
+  padding: 40px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-
-.screen {
-    width: 92%;
-    height: 50px;
-    font-size: 22px;
-    margin-bottom: 12px;
-    padding: 10px;
-    background: #0f172a;
-    border: 1px solid #334155;
-    border-radius: 6px;
-    color: #e2e8f0;
-    text-align: right;
+input[type="text"] {
+  padding: 10px;
+  width: 280px;
+  font-size: 20px;
+  margin-bottom: 20px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  margin-top: 14px;
 }
-
-
-.buttons {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
-}
-
 
 button {
-    height: 50px;
-    font-size: 18px;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-    background: #334155;
-    color: #e2e8f0;
-    transition: 0.2s;
+  padding: 10px 20px;
+  font-size: 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
-
 
 button:hover {
-    background: #475569;
+  background-color: #2378d3;
 }
 
-
-button.operator {
-    background: #475569;
-}
-
-
-button.equal {
-    grid-column: span 2;
-    background: #3b82f6;
-    color: #fff;
+#result {
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
 }
